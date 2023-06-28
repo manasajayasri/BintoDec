@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversion of Binary to Decimal using JS</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1 class="heading">Conversion of Binary to Decimal using JS</h1>
+    <div class="num">
+      <input
+        type="number"
+        name="number"
+        placeholder="Only Binary"
+        id="number"
+      />
+      <input type="button" value="check" onclick="binary()" />
+    </div>
+
+    <script>
+      function binary() {
+        var num = document.getElementById("number").value;
+        var sum = 0;
+        var i = 0;
+        while (num) {
+          sum = sum + Math.pow(2, i) * (num % 10);
+          i++;
+          num = parseInt(num / 10);
+        }
+        alert(sum);
+      }
+    </script>
+  </body>
+</html>

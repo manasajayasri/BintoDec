@@ -1,0 +1,12 @@
+.heading {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.num {
+  padding: 50px;
+  border: 10 px;
+  border-color: black;
+  background-color: tan;
+  text-align: center;
+}
